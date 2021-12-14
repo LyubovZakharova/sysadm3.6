@@ -3,7 +3,7 @@
 ......
 chdir("/tmp")
 ......
-2) см. (prt sc - 2.)
+2) см. (prt sc-2.)
 3) 
 :~$ ps aux | grep <app_name> - найдем PID приложения
 :~$ lsof -p <app_PID> | grep deleted - см.список файлов,которые открыты этим app,выбираем удаленный и используем его FD
@@ -73,4 +73,4 @@ S - interruptible sleep (waiting for an event to complete) - спящий про
 R - running or runnable (on run queue) - работающий процесс (или процесс, ожидающий начала работы в очереди)
 s - is a session leader - первый процесс в сессии (его PID совпадает с его session ID SID)
 + - is in the foreground process group - не в фоновом режиме
-Этой командой, можно подробно посмотреть к каким процессам это относится: см. (prt sc - 9.)
+Этой командой, можно подробно посмотреть к каким процессам это относится: см. (prt sc-9.)
